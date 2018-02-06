@@ -11,6 +11,7 @@ injectGlobal`
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: middle middle;
     background-image: url(${background});
   }
   #root{
