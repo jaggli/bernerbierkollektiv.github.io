@@ -22,6 +22,10 @@ injectGlobal`
       padding-top: 50px;
       padding-bottom: 50px;
     }
+    @media (max-height: 850px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
   #root{
     max-width: 1000px;
