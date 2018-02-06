@@ -5,7 +5,7 @@ import Grid from 'material-ui/Grid'
 import Paper from 'material-ui/Paper'
 import * as images from './img'
 import classNames from 'classnames'
-import Typography from 'material-ui/Typography/Typography';
+import Typography from 'material-ui/Typography/Typography'
 
 const styles = theme => ({
   root: {
@@ -53,6 +53,11 @@ const breweries = [
     title: 'Les Garçons',
     logo: images.garcons,
     link: 'https://www.facebook.com/brasserielesgarcons/'
+  },
+  {
+    title: 'Lorraine Beer Project',
+    logo: images.lbp,
+    link: 'https://www.lorrainebeerproject.ch/'
   },
   {
     title: 'Fjord & Fiell Nano Brewery',
