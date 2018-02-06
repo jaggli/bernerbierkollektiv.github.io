@@ -7,21 +7,25 @@ import { background } from './img'
 injectGlobal`
   html, body { height: 100%; }
   body{
+    box-sizing: border-box;
+    position:relative;
+    padding:160px 20px;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: middle middle;
+    background-position: center;    background-attachment: scroll;
     background-image: url(${background});
+    background-color: black !important;
+    @media (max-width: 500px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
   #root{
     max-width: 1000px;
     min-width: 320px;
-    margin: 160px auto;
-    @media (max-width: 500px) {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
+    margin: 0 auto;
   }
 `
 
