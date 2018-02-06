@@ -18,7 +18,7 @@ const styles = theme => ({
     textAlign: 'center'
   },
   control: {
-    padding: theme.spacing.unit
+    padding: theme.spacing.unit / 2
   },
   avatar: {
     width: 'auto',
@@ -42,7 +42,7 @@ const breweries = [
   {
     title: 'Les Garçons',
     logo: images.garcons,
-    link: 'http://www.les-garcons.com/'
+    link: 'https://www.facebook.com/brasserielesgarcons/'
   },
   {
     title: 'Fjord & Fiell Nano Brewery',
@@ -94,7 +94,7 @@ class GuttersGrid extends React.Component {
               <Brewery brewery={brewery} classes={classes} />
             ))}
           </Grid>
-          <Grid container justify='center' spacing={Number(spacing)}>
+          <Grid container justify='center' spacing={Number(spacing)} className={classes.control}>
             {breweries.slice(2).map(brewery => (
               <Brewery brewery={brewery} classes={classes} />
             ))}
