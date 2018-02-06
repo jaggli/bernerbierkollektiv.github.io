@@ -1,0 +1,46 @@
+{
+  "name": "bernerbierkollektiv.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "material-ui": "^1.0.0-beta.30",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "react-tap-event-plugin": "^3.0.2",
+    "scroll-into-view": "^1.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf ./static/js && react-scripts build && cp -rf ./build/* . && rm -rf ./build",
+    "test": "react-scripts test --env=jsdom",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    },
+    "globals": [
+      "jest",
+      "afterAll",
+      "afterEach",
+      "beforeAll",
+      "beforeEach",
+      "describe",
+      "require",
+      "test",
+      "it",
+      "expect",
+      "fetch",
+      "URL"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "standard": "*"
+  }
+}
