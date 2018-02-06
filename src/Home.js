@@ -11,16 +11,26 @@ const styles = theme => ({
   root: {
     flexGrow: 1
   },
+  head: {
+    paddingTop: theme.spacing.unit,
+    paddingLeft: theme.spacing.unit * 4,
+    paddingRight: theme.spacing.unit * 4,
+    paddingBottom: theme.spacing.unit * 2,
+    color: 'rgba(255,255,255,.9)',
+    textAlign: 'center',
+    textShadow: '0 0 5px black, 0 0 15px black, 0 0 25px black, 0 0 35px black, 0 0 45px black'
+  },
   paper: {
-    height: 300,
-    width: 300,
+    height: 280,
+    width: 280,
     padding: theme.spacing.unit,
-    textAlign: 'center'
+    textAlign: 'center',
+    backgroundColor: 'rgba(255,255,255,.85)'
   },
   control: {
     padding: theme.spacing.unit / 2
   },
-  avatar: {
+  image: {
     width: 'auto',
     height: 'auto',
     maxWidth: '100%',
@@ -62,7 +72,7 @@ const Brewery = ({ brewery, classes }) => (
         <img
           alt={brewery.title}
           src={brewery.logo}
-          className={classNames(classes.avatar)}
+          className={classNames(classes.image)}
         />
       </a>
     </Paper>
@@ -85,8 +95,8 @@ class GuttersGrid extends React.Component {
       <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Grid container justify='center' spacing={Number(spacing)} className={classes.control} >
-            <Typography variant='headline' component='h1'>
-              Berner Bier Kollektiv
+            <Typography variant='display3' component='h1' className={classes.head}>
+              Berner Bier&nbsp;Kollektiv
             </Typography>
           </Grid>
           <Grid container justify='center' spacing={Number(spacing)} className={classes.control} >
