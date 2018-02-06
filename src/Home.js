@@ -52,7 +52,7 @@ const breweries = [
 ]
 
 const Brewery = ({ brewery, classes }) => (
-  <Grid key={brewery.link} item>
+  <Grid item>
     <Paper className={classes.paper}>
       <a
         href={brewery.link}
@@ -91,12 +91,20 @@ class GuttersGrid extends React.Component {
           </Grid>
           <Grid container justify='center' spacing={Number(spacing)} className={classes.control} >
             {breweries.slice(0, 2).map(brewery => (
-              <Brewery brewery={brewery} classes={classes} />
+              <Brewery
+                key={brewery.link}
+                brewery={brewery}
+                classes={classes}
+              />
             ))}
           </Grid>
           <Grid container justify='center' spacing={Number(spacing)} className={classes.control}>
             {breweries.slice(2).map(brewery => (
-              <Brewery brewery={brewery} classes={classes} />
+              <Brewery
+                key={brewery.link}
+                brewery={brewery}
+                classes={classes}
+              />
             ))}
           </Grid>
         </Grid>
