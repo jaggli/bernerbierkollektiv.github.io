@@ -14,7 +14,8 @@ injectGlobal`
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    background-attachment: scroll;
+    background-position: center;
+    background-attachment: fixed;
     background-image: url(${background});
     background-color: black !important;
     @media (max-width: 500px) {
