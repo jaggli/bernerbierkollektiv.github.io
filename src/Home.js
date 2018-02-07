@@ -50,6 +50,11 @@ const breweries = [
     link: 'https://www.bierwerkstatt.be/'
   },
   {
+    title: 'Fjord & Fiell Nano Brewery',
+    logo: images.fjordfjell,
+    link: 'https://www.facebook.com/fjordandfjell/'
+  },
+  {
     title: 'Les Garçons',
     logo: images.garcons,
     link: 'https://www.facebook.com/brasserielesgarcons/'
@@ -58,11 +63,6 @@ const breweries = [
     title: 'Lorraine Beer Project',
     logo: images.lbp,
     link: 'https://www.lorrainebeerproject.ch/'
-  },
-  {
-    title: 'Fjord & Fiell Nano Brewery',
-    logo: images.fjordfjell,
-    link: 'https://www.facebook.com/fjordandfjell/'
   }
 ]
 
