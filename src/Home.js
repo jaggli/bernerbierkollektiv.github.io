@@ -5,20 +5,11 @@ import Grid from 'material-ui/Grid'
 import Paper from 'material-ui/Paper'
 import * as images from './img'
 import classNames from 'classnames'
-import Typography from 'material-ui/Typography/Typography'
+import Logo from './Logo'
 
 const styles = theme => ({
   root: {
     flexGrow: 1
-  },
-  head: {
-    paddingTop: theme.spacing.unit,
-    paddingLeft: theme.spacing.unit * 4,
-    paddingRight: theme.spacing.unit * 4,
-    paddingBottom: theme.spacing.unit * 2,
-    color: 'rgba(255,255,255,.9)',
-    textAlign: 'center',
-    textShadow: '0 0 5px black, 0 0 15px black, 0 0 25px black, 0 0 35px black, 0 0 45px black'
   },
   paper: {
     height: 280,
@@ -100,9 +91,7 @@ class GuttersGrid extends React.Component {
       <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Grid container justify='center' spacing={Number(spacing)} className={classes.control} >
-            <Typography variant='display3' component='h1' className={classes.head}>
-              Berner Bier&nbsp;Kollektiv
-            </Typography>
+            <Logo />
           </Grid>
           <Grid container justify='center' spacing={Number(spacing)} className={classes.control} >
             {breweries.slice(0, 2).map(brewery => (
