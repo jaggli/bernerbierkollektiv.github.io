@@ -36,7 +36,7 @@ class Logo extends PureComponent {
           <span class='one'>K</span>
         </LogoTop>
         <div>
-          Berner Braukollektiv
+          Berner Bierkollektiv
         </div>
       </LogoContainer>
     )
