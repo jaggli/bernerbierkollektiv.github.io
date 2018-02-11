@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Obake FREE VER.';
-    src: url('Obake-FREE-VER.woff2') format('woff2'),
-        url('Obake-FREE-VER.woff') format('woffs');
+    font-family: 'Obake';
+    src: url('Obake.woff2') format('woff2'),
+        url('Obake.woff') format('woffs');
     font-weight: normal;
     font-style: normal;
 }

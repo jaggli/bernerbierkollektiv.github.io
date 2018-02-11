@@ -1,0 +1,22 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewbox="0 0 300 300" xml:space="preserve">
+  <defs>
+    <pattern id="pattern" width="1" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect x="0" y="0" width="1" height=".8" fill="#ffffff"/>
+    </pattern>
+      
+    <text id="text" x="150" y="100" font-family="Obake" font-size="92" letter-spacing="-2" text-anchor="middle">
+      <tspan>B</tspan>
+      <tspan>B</tspan>
+      <tspan>K</tspan>
+    </text>
+    
+    <mask id="mask">
+      <rect x="0" y="0" width="100%" height="100%" fill="#fff" />
+      <use x="-6" y="-6" stroke="#000" stroke-width="8" xlink:href="#text" opacity="1" fill="#000"/>
+    </mask>
+    
+  </defs>
+ 
+  <use x="6" y="6" xlink:href="#text" opacity="1" fill="url(#pattern)" mask="url(#mask)"/>
+  <use x="0" y="0" xlink:href="#text" fill="#fff"/>
+</svg>

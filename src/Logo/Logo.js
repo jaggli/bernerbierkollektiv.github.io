@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
+import Image from './Image.js'
 
 const LogoContainer = styled.div`
-  font-family: 'Obake FREE VER.';
+  font-family: 'Obake';
   font-weight: normal;
   font-style: normal;
   font-size: 92px;
@@ -17,24 +18,20 @@ const LogoContainer = styled.div`
     0 0 45px black;
 `
 
-const LogoTop = styled.div`
-  > .one {
-    font-size: 214px;
-  }
-  > .two {
-    font-size: 284px;
-  }
-`
+// const LogoTop = styled.div`
+//   > .one {
+//     font-size: 214px;
+//   }
+//   > .two {
+//     font-size: 284px;
+//   }
+// `
 
 class Logo extends PureComponent {
   render () {
     return (
       <LogoContainer>
-        <LogoTop>
-          <span class='one'>B</span>
-          <span class='two'>B</span>
-          <span class='one'>K</span>
-        </LogoTop>
+        <Image />
         <div>
           Berner Bierkollektiv
         </div>
